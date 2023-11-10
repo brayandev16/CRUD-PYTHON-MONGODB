@@ -1,16 +1,3 @@
-# line 28, in mostrarDatos
-#     tabla.insert('', 0, text=documento["_id"], values=(documento["nombre"], documento["email"], documento["edad"], documento["ciudad"]))     
-#                                                                             ~~~~~~~~~^^^^^^^^^
-# KeyError: 'email'
-
-# SE DEBE A QUE EL CAMPO REFERIDO COMO KEYWORD NO TIENE EXISTE EN TODOS LOS DOCUMENTOS Y DEBE AGREGARSE PARA 
-# PODER LEERLO CON NORMALIDAD
-
-
-import sys
-print(sys.path)
-import sys
-sys.path.append('c:\\users\\opaal\\appdata\\local\\packages\\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\\localcache\\local-packages\\python311\\site-packages')
 import pymongo
 from tkinter import*
 from tkinter import ttk
